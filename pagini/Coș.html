@@ -52,7 +52,7 @@
 
 <p id="cos-gol">Coșul dumneavoastră este gol.</p>
 
-<button id="continua-cumparaturile" onclick="location.href='../pagini/Catalog.html'">Continuă cumpărăturile</button>
+<button id="continua-cumparaturile" onclick="location.href='catalog.html'">Continuă cumpărăturile</button>
 
 <div id="informatii-cos" class="ascuns">
   <div class="suma-cos-container">
@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
   } else if (livrare.value === 'ridicare') {
     localStorage.removeItem('cos');
     alert('Comanda a fost plasată pentru ridicare din magazin!');
-    window.location.href = "../index.html";
+    window.location.href = "../Home.html";
     return;
   }
 
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   localStorage.removeItem('cos');
   alert('Comanda a fost plasată pentru livrare!');
-  window.location.href = "../index.html";
+  window.location.href = "../Home.html";
 });
 
   livrareSelect.addEventListener('change', function() {
@@ -314,7 +314,7 @@ function ascundeCampuriLivrare() {
       sumaTotala += parseFloat(produs.pret); 
     });
 
-    const taxaLivrare = 25;
+    const taxaLivrare = 50;
     const subtotal = sumaTotala;
     const total = sumaTotala + taxaLivrare;
 
