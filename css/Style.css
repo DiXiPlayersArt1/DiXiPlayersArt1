@@ -57,9 +57,6 @@ body{
     display: block;
     z-index: 1999;
 }
-.dropdown:hover .dropdown-content  {
-    display: block;
-}
 nav ul li a:active, nav ul li a:hover{
     background-color: white;
     color:black ;
@@ -299,6 +296,10 @@ footer{
     }
 }
 @media (max-width: 768px){
+    .dropdown:hover .dropdown-content {
+        display: none;
+        z-index: 1999;
+    }
     .footerNav ul{
         flex-direction: column;
     }
